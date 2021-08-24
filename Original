@@ -1,0 +1,24 @@
+<script>
+
+function disemvowel(str) {
+  let userinput = prompt("Any string");
+  console.log(userinput);
+  //we need do write something that checks every letter in the string that was inputted by the user.
+  const vowels = ["A", "a", "E", "e", "I", "i", "O", "o", "U", "u"]; //9 elements long. I may want to change this from an array to an object.
+  let vowLength = vowels.length;
+    for
+      (let i = 0; i < vowLength; i++){
+      if
+        (userinput == vowels.toString()){ //The problem I think will happen here is that these two parameters are different datatypes. Thus will go straight
+          console.log("userinput is equal to vowels."); //to else portion of the if statement.
+        }
+          else
+          {
+            console.log(userinput - vowels);
+
+    }
+  }
+}
+
+disemvowel();
+</script>
